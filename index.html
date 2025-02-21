@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Student Information</h1>
+    </header>
+    <main>
+      <form id="studentForm">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="course">Course:</label>
+          <select id="course">
+            <option value="web">Web Development</option>
+            <option value="python">Python Programming</option>
+            <option value="java">Java Programming</option>
+          </select>
+        </div>
+        <div class="form-group radi">
+          <label>Gender: &nbsp;&nbsp;</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>  &nbsp;&nbsp;
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <div id="output">
+        <h2>Submitted Information</h2>
+        <p id="result"></p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Web Development Lab</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
